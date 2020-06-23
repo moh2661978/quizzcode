@@ -10,26 +10,26 @@
     body 
     {
     background-color: lightblue;
-    font-family: Helvetica;
+    font-family: Verdana, Helvetica, sans-serif;
     }
 
     .glow {
-  font-size: 40px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0400ff, 0 0 40px #0400ff, 0 0 50px #0400ff, 0 0 60px #0400ff, 0 0 70px #0400ff;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #8ef8a0, 0 0 40px #00ff2a, 0 0 50px #00ff2a, 0 0 60px #00ff2a, 0 0 70px #00ff2a, 0 0 80px #00ff2a;
-  }
-}
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0400ff, 0 0 40px #0400ff, 0 0 50px #0400ff, 0 0 60px #0400ff, 0 0 70px #0400ff;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #8ef8a0, 0 0 40px #00ff2a, 0 0 50px #00ff2a, 0 0 60px #00ff2a, 0 0 70px #00ff2a, 0 0 80px #00ff2a;
+      }
+    }
 
     #main 
     {
@@ -40,7 +40,7 @@
     padding: 10px;
     background-color: white;
     border-radius: 10px;
-font-size: 16px;
+    font-size: 16px;
     }
     
     #header 
@@ -60,9 +60,10 @@ font-size: 16px;
     .image
     {
         border-radius: 50%;
-        width: 100px;
+        width: 50px;
         border: 2px solid lightgreen;
-        padding: 4px;
+        padding: 2px;
+        vertical-align: middle;
     }
 
     label 
@@ -70,7 +71,7 @@ font-size: 16px;
     display: block;
     background-color: white;
     margin: 10px;
-font-size: 16px;
+    font-size: 18px;
     }
     
     input 
@@ -88,7 +89,7 @@ font-size: 16px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-font-size: 20px;
+    font-size: 20px;
     }
     
     button 
@@ -101,8 +102,9 @@ font-size: 20px;
     {
     text-align: center;
     background: rgb(75, 75, 75);
-    color: rgb(72, 255, 0);
+    color: rgb(75, 189, 30);
     overflow:auto;
+    font-size: 14px;
 
     }
     footer > ul {
@@ -115,7 +117,7 @@ font-size: 20px;
     }
     footer > ul > li > a
     {
-    color:rgb(72, 255, 0);
+    color:rgb(75, 189, 30);
     }
 
 </style>
@@ -132,21 +134,27 @@ font-size: 20px;
     </div><!-- close header div -->
     
     <br />
-    <img style='vertical-align:middle' src='CodeActually.jpg' alt="CodeActually photo" class="image">
-    <div style='vertical-align:middle; display:inline;'>
-     <strong><a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code from: CodeActually</a></strong>
+    <img src='CodeActually.jpg' alt="CodeActually photo" class="image">
+    <div style='vertical-align:middle; display:inline-block;'>
+     <strong><a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code: CodeActually</a></strong>
     </div>
 
     <br />
-    <img style='vertical-align:middle' src='salah.jpg' alt="tutor photo" class="image">
-    <div style='vertical-align:middle; display:inline;'>
-    <strong><a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng. Salah Selim - Web Tutor</a></strong>
+    <img src='salah.jpg' alt="tutor photo" class="image">
+    <div style='vertical-align:middle; display:inline-block;'>
+    <strong><a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng.Salah Selim-Web Tutor</a></strong>
     </div>
 
     <br />
-    <img style='vertical-align:middle' src='mma.jpg' alt="student photo" class="image">
-    <div style='vertical-align:middle; display:inline;'>
-    <strong><a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud - Web Development Challenger Track</a></strong>
+    <img src='mma.jpg' alt="student photo" class="image">
+    <div style='vertical-align:middle; display:inline-block;'>
+    <strong><a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud-Web Development Challenger Track</a></strong>
+    </div>
+
+    <br />
+    <img src='mmagithub.gif' alt="student photo" class="image">
+    <div style='vertical-align:middle; display:inline-block;'>
+    <strong><a href="https://github.com/moh2661978/quizzcode" target="_blank">Edited Code@GitHub</a></strong>
     </div>
 
 <form id="form1" action=" ">
