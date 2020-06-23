@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="Quizz app" content="Free Web tutorials for HTML and CSS and javascript">
+<meta name="Quiz app" content="Free Web tutorials for HTML and CSS and javascript">
 <meta name="author" content="Mohamed Mahmoud">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -33,7 +33,6 @@
       from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0400ff, 0 0 40px #0400ff, 0 0 50px #0400ff;
       }
-      
       to {
         text-shadow: 0 0 20px #fff, 0 0 30px #8ef8a0, 0 0 40px #00ff2a, 0 0 50px #00ff2a, 0 0 60px #00ff2a;
       }
@@ -65,6 +64,24 @@
     border-bottom-right-radius: 40px;
     }
 
+    .spec {
+      font-size: 2.5vmax;
+      color: #fff;
+      text-align: center;
+    }
+
+    .quesions  
+    {
+    clear: both;
+    background-color: lightgreen;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2em;
+    }
+
     .image
     {
         border-radius: 50%;
@@ -74,12 +91,12 @@
         vertical-align: middle;
     }
 
-    label 
+    label
     {
     display: block;
     background-color: white;
     margin: 10px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     }
     
     input 
@@ -87,19 +104,7 @@
     width: 30px;
     margin-left: 20px;
     }
-    
-    h2 
-    {
-    clear: both;
-    background-color: lightgreen;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 1.3em;
-    }
-    
+        
     button 
     {
     width: 100px;
@@ -134,18 +139,6 @@
     color:rgb(75, 189, 30);
     }
 
-    h1 > span {  display: inline-block;
-    width: auto;
-    background-color: lightgreen;
-    color: white;
-    padding: 5px 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    }
-
 </style>
 
 </head>
@@ -155,8 +148,8 @@
 
     <div id="header"><!-- open header div -->
 
-    <h1 class="glow">5 Minutes Quiz <br/><br/>
-	  <span>Web Development Challenge Track</span></h1>
+    <h1 class="glow">5 Minutes Quiz</h1>
+	  <h2 class="spec">Web Development Challenge Track</h2>
 
     </div><!-- close header div -->
     
@@ -186,49 +179,49 @@
 
 <form id="form1" action=" ">
 
-<h2>Q1-Which of the following selector selects all paragraph elements whose lang attribute has a value of exactly “fr”?</h2>
+<h2 class="quesions">Q1-Which of the following selector selects all paragraph elements whose lang attribute has a value of exactly “fr”?</h2>
 <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />p[lang]</label>
 <label for="var_join"><input type="radio" name="variable" value="25" id="var_join" />p[lang=“fr”]</label>
 <label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />p[lang~=“fr”]</label>
 <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>p[lang|=“fr”]</label>
 
-<h2>Q2-Which of the following property is used to control the scrolling of an image in the background?</h2>
+<h2 class="quesions">Q2-Which of the following property is used to control the scrolling of an image in the background?</h2>
 <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>background-attachment</label>
 <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>background</label>
 <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />background-repeat</label>
 <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />background-position</label>
 
-<h2>Q3-Which of the following property is used to add or subtract space between the words of a sentence?</h2>
+<h2 class="quesions">Q3-Which of the following property is used to add or subtract space between the words of a sentence?</h2>
 <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />color</label>
 <label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />direction</label>
 <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />letter-spacing</label>
 <label for="cat_condition"><input type="radio" name="con" value="25" id="cat_condition" />word-spacing</label>
 
-<h2>Q4-Which of the following property of a anchor element signifies unvisited hyperlinks?</h2>
+<h2 class="quesions">Q4-Which of the following property of a anchor element signifies unvisited hyperlinks?</h2>
 <label for="if_string"><input type="radio" name="ifstate" value="25" id="if_string" />link</label>
 <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />visited</label>
 <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />hover</label>
 <label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" />active</label>
 
-<h2>Q5-Which of the following property of a table element specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style?</h2>
+<h2 class="quesions">Q5-Which of the following property of a table element specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style?</h2>
 <label for="var_string2"><input type="radio" name="variable2" value="25" id="var_string2" />border-collapse</label>
 <label for="var_join2"><input type="radio" name="variable2" value="0" id="var_join2" />border-spacing</label>
 <label for="var_info2"><input type="radio" name="variable2" value="0" id="var_info2" />caption-side</label>
 <label for="var_condition2"><input type="radio" name="variable2" value="0" id="var_condition2"/>empty-cells</label>
 
-<h2>Q6-Which of the following property changes the width of top border?</h2>
+<h2 class="quesions">Q6-Which of the following property changes the width of top border?</h2>
 <label for="sub_string2"><input type="radio" name="sub2" value="0" id="sub_string2"/>border-bottom-width</label>
 <label for="sub_join2"><input type="radio" name="sub2" value="25" id="sub_join2"/>border-top-width</label>
 <label for="sub_info2"><input type="radio" name="sub2" value="0" id="sub_info2" />border-left-width</label>
 <label for="sub_condition2"><input type="radio" name="sub2" value="0" id="sub_condition2" />border-right-width</label>
 
-<h2>Q7-Which of the following property specifies an image for the marker rather than a bullet point or number?</h2>
+<h2 class="quesions">Q7-Which of the following property specifies an image for the marker rather than a bullet point or number?</h2>
 <label for="cat_string2"><input type="radio" name="con2" value="0" id="cat_string2" />list-style-type</label>
 <label for="cat_join2"><input type="radio" name="con2" value="0" id="cat_join2" />list-style-position</label>
 <label for="cat_info2"><input type="radio" name="con2" value="25" id="cat_info2" />list-style-image</label>
 <label for="cat_condition2"><input type="radio" name="con2" value="0" id="cat_condition2" />list-style</label>
 
-<h2>Q8-Which of the following value of cursor shows it as an arrow?</h2>
+<h2 class="quesions">Q8-Which of the following value of cursor shows it as an arrow?</h2>
 <label for="if_string2"><input type="radio" name="ifstate2" value="0" id="if_string2" />crosshair</label>
 <label for="if_join2"><input type="radio" name="ifstate2" value="25" id="if_join2" />default</label>
 <label for="if_info2"><input type="radio" name="ifstate2" value="0" id="if_info2" />pointer</label>
