@@ -105,6 +105,10 @@
     width: 100px;
     margin-top: 20px;
     }
+    
+    button:hover { background-color: lightgreen; }
+    button:hover > span { color: rgb(0, 4, 250); }
+    button > span:hover { color: red; }
 
     footer
     {
@@ -146,25 +150,25 @@
     <br />
     <img src='CodeActually.jpg' alt="CodeActually photo" class="image">
     <div style='vertical-align:middle; display:inline-block;'>
-     <strong><a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code: CodeActually</a></strong>
+     <a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code: CodeActually</a>
     </div>
 
     <br />
     <img src='salah.jpg' alt="tutor photo" class="image">
     <div style='vertical-align:middle; display:inline-block;'>
-    <strong><a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng.Salah Selim-Web Tutor</a></strong>
+    <a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng.Salah Selim-Web Tutor</a>
     </div>
 
     <br />
     <img src='mma.jpg' alt="student photo" class="image">
     <div style='vertical-align:middle; display:inline-block;'>
-    <strong><a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud-Web Development Challenger Track</a></strong>
+    <a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud-Web Development Challenger Track</a>
     </div>
 
     <br />
     <img src='mmagithub.gif' alt="student photo" class="image">
     <div style='vertical-align:middle; display:inline-block;'>
-    <strong><a href="https://github.com/moh2661978/quizzcode" target="_blank">Edited Code@GitHub</a></strong>
+    <a href="https://github.com/moh2661978/quizzcode" target="_blank">Edited Code@GitHub</a>
     </div>
 
 <form id="form1" action=" ">
@@ -217,10 +221,10 @@
 <label for="if_info2"><input type="radio" name="ifstate2" value="0" id="if_info2" />pointer</label>
 <label for="if_condition2"><input type="radio" name="ifstate2"  value="0" id="if_condition2" />move</label>
 
-<button type="submit" value="Submit">Submit</button>
+<button type="submit" value="Submit"><span>Submit</span></button>
 
 </form>
-    
+
 <p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
 
