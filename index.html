@@ -7,7 +7,7 @@
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="Quiz app" content="Free Web tutorials for HTML and CSS and javascript">
   <meta name="author" content="Mohamed Mahmoud">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -56,9 +56,9 @@
       border: 5px solid lightgreen;
       padding: 5px;
       height: auto;
-      background: white;
       background-image: url("code.jpg");
-      color: white;
+      opacity: 90%;
+      color: #00ff2a;
       border-top-left-radius: 40px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -67,7 +67,7 @@
 
     .spec {
       font-size: 2.5vmax;
-      color: #fff;
+      color: yellowgreen;
       text-align: center;
     }
 
@@ -80,14 +80,6 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       font-size: 1.2em;
-    }
-
-    .image {
-      border-radius: 50%;
-      width: 50px;
-      border: 2px solid lightgreen;
-      padding: 2px;
-      vertical-align: middle;
     }
 
     label {
@@ -142,6 +134,39 @@
     footer>ul>li>a {
       color: rgb(75, 189, 30);
     }
+
+    .image {
+      border-radius: 50%;
+      width: 80px;
+      border: 2px solid lightgreen;
+      padding: 2px;
+
+    }
+
+    .container {
+      /* set display position here */
+      flex-direction: row;
+      display: inline-flex;
+      margin: 10px;
+    }
+
+    .box {
+      width: 25%;
+      height: 150px;
+      text-align: center;
+      display: inline-flexbox;
+      padding: 1%;
+    }
+
+    a {
+      font-size: small;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5vmax;
+    }
   </style>
 
 </head>
@@ -153,33 +178,36 @@
     <div id="header">
       <!-- open header div -->
 
-      <h1 class="glow"> 5 Minutes Quiz </h1>
-      <h2 class="spec"> Web Development Challenge Track </h2>
+      <h1><span class="glow">5</span> Minutes Quiz</h1>
+      <h2 class="spec">Web Development Challenge Track</h2>
 
     </div><!-- close header div -->
 
-    <br />
-    <img src="CodeActually.jpg" alt="CodeActually photo" class="image">
-    <div style="vertical-align:middle; display:inline-block;">
-      <a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code: CodeActually</a>
-    </div>
+    <div class="container">
+      <div class="box"> <img src="CodeActually.jpg" alt="CodeActually photo" class="image">
+        <div style="display:inline-block;">
+          <a href="https://codeactually.com/interactivequiz.html" target="_blank">Original code: CodeActually</a>
+        </div>
+      </div>
 
-    <br />
-    <img src="salah.jpg" alt="tutor photo" class="image">
-    <div style="vertical-align:middle; display:inline-block;">
-      <a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng.Salah Selim-Web Tutor</a>
-    </div>
+      <div class="box"> <img src="salah.jpg" alt="tutor photo" class="image">
+        <div style="display:inline-block;">
+          <a href="https://nfpdiscussions.udacity.com/t/5-minutes-quiz-challenge-track/14205" target="_blank">Quiz By: Eng.Salah Selim</a>
+        </div>
+      </div>
 
-    <br />
-    <img src="mma.jpg" alt="student photo" class="image">
-    <div style="vertical-align:middle; display:inline-block;">
-      <a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud</a>
-    </div>
+      <div class="box"> <img src="mma.jpg" alt="student photo" class="image">
+        <div style="display:inline-block;">
+          <a href="https://www.linkedin.com/in/mohamed-mahmoud-303713a" target="_blank">Code Edited By: Mohamed Mahmoud</a>
+        </div>
+      </div>
 
-    <br />
-    <img src="mmagithub.gif" alt="student photo" class="image">
-    <div style="vertical-align:middle; display:inline-block;">
-      <a href="https://github.com/moh2661978/quizzcode" target="_blank">Edited Code@GitHub</a>
+      <div class="box"> <img src="mmagithub.gif" alt="student photo" class="image">
+        <div style="display:inline-block;">
+          <a href="https://github.com/moh2661978/quizzcode" target="_blank">Edited Code@GitHub</a>
+        </div>
+      </div>
+
     </div>
 
     <form id="form1" action=" ">
